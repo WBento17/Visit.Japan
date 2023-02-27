@@ -183,8 +183,7 @@ export default function Header() {
                                 <a href="#"><div style={{backgroundImage: `url("/images/restaurant.jpg")`}} className={`${styles.img_menu_banner} ${styles.img_restaurant}`}><span className={`${styles.text_banner_menu}`}>Restaurant Search</span></div></a>
                                 <a href='#'><div style={{backgroundImage: `url("/images/tour.jpg")`}} className={`${styles.img_menu_banner} ${styles.img_tour}`}><span className={`${styles.text_banner_menu}`}>Tour & Activies</span></div></a>
                             </div>
-                            <div className={`${styles.sun_menu}`}>
-
+                            <div style={{backgroundImage: `url("/images/castle.png")`}} className={`${styles.castle_menu}`}>
                             </div>
                         </div>
                     </div>
@@ -248,8 +247,7 @@ export default function Header() {
                                 <a href="#"><div style={{backgroundImage: `url("/images/hakuba.jpg")`}} className={`${styles.img_menu_banner} ${styles.img_hakuba}`}><span className={`${styles.text_banner_menu}`}>Hakuba</span></div></a>
                                 <a href='#'><div style={{backgroundImage: `url("/images/kerama.jpg")`}} className={`${styles.img_menu_banner} ${styles.img_kerama}`}><span className={`${styles.text_banner_menu}`}>Kerama Islands</span></div></a>
                             </div>
-                            <div className={`${styles.sun_menu}`}>
-
+                            <div style={{backgroundImage: `url("/images/castle.png")`}} className={`${styles.castle_menu}`}>
                             </div>
                         </div>
                     </div>
@@ -313,8 +311,7 @@ export default function Header() {
                                 <a href="#"><div style={{backgroundImage: `url("/images/furano.jpg")`}} className={`${styles.img_menu_banner} ${styles.img_furano}`}><span className={`${styles.text_banner_menu}`}>Furano Ski Resort</span></div></a>
                                 <a href='#'><div style={{backgroundImage: `url("/images/yunishigawa.jpg")`}} className={`${styles.img_menu_banner} ${styles.img_yunishigawa}`}><span className={`${styles.text_banner_menu}`}>Yunishigawa Kamakura</span></div></a>
                             </div>
-                            <div className={`${styles.sun_menu}`}>
-
+                            <div style={{backgroundImage: `url("/images/castle.png")`}} className={`${styles.castle_menu}`}>
                             </div>
                         </div>
                     </div>
