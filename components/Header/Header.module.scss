@@ -6,6 +6,7 @@
     width: 100%;
     background-color: $secundaria;
     position: fixed;
+    z-index: 2;
 
     @media (min-width: 768px) {
         height: 75px;
@@ -374,6 +375,7 @@
     .banners_menu {
         padding-top: 25px;
         margin: auto;
+        background-color: $secundaria;
 
         @media (min-width: 768px) {
             padding-top: 0;
