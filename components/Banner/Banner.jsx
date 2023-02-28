@@ -10,6 +10,8 @@ SwiperCore.use([Autoplay, Navigation, Pagination]);
 
 export default function Banner() {
 
+    const [activeLink, setActiveLink] = useState(null);
+
     const swiperParams = {
         slidesPerView: 1,
         spaceBetween: 0,
@@ -22,7 +24,7 @@ export default function Banner() {
         },
         loop: true,
         autoplay: {
-            delay: 10000,
+            delay: 9000,
             disableOnInteraction: true,
         },
         navigation: {
@@ -31,18 +33,26 @@ export default function Banner() {
         },
         noSwipingSelector: null,
         className: styles.banner_swiper,
-        onSlideChange: () => console.log('slide change'),
+        onSlideChange: (swiper) => {
+            if (activeLink) {
+                activeLink.classList.remove(styles.btn_banner_active);
+            }
+            const currentSlide = swiper.slides[swiper.activeIndex];
+            const link = currentSlide.querySelector(`.${styles.btn_banner}`);
+            link.classList.add(styles.btn_banner_active);
+            setActiveLink(link);
+            setTimeout(() => {
+                link.classList.remove(styles.btn_banner_active);
+            }, 1000000);
+        },
         onSwiper: (swiper) => console.log(swiper),
     };
-
-
-
 
     return (
         <Swiper {...swiperParams}>
             <SwiperSlide>
                 <div style={{ backgroundImage: `url("/images/banner-1.jpg")` }} className={`${styles.banner}`}>
-                    <a href="#" className={`${styles.btn_banner} `}>Travel</a>
+                    <a href="#" className={`${styles.btn_banner} ${styles.btn_banner_active} `}>Travel</a>
                 </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -72,4 +82,3 @@ export default function Banner() {
     )
 
 }
-
