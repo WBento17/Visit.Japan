@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import React, { useState, useEffect, useRef } from 'react';
-import SwiperCore, { Autoplay, Navigation, Pagination } from 'swiper/core';
+import SwiperCore, { Autoplay, Navigation, Pagination, EffectFade } from 'swiper';
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
@@ -13,7 +13,7 @@ export default function Banner() {
     
     const swiperParams = {
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 0,
         pagination: {
             clickable: true,
             dynamicBullets: true,
