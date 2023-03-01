@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/Index.module.scss'
 import Header from '/components/Header/Header';
 import Banner from '/components/Banner/Banner';
+import Map from '/components/Map/Map';
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       </Head>
       <Header />
       <Banner />
+      <Map />
 
     </>
   )

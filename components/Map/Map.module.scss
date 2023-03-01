@@ -1,0 +1,30 @@
+@import '/styles/variaveis';
+
+.map_japan {
+    width: 100%;
+    height: 859px;
+    background-color: $secundaria;
+    position: relative;
+    top: 60px;
+    padding-top: 30px;
+    display: flex;
+
+    @media (min-width: 768px) {
+        height: 550px;
+        top: 75px;
+    }
+}
+
+.japan_swiper {
+    width: 50%;
+}
+
+.japan_svg path {
+    fill: $secundaria;
+    stroke: black;
+}
+
+.japan_svg path:hover {
+    fill: red;
+    cursor: pointer;
+}
