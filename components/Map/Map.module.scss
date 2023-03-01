@@ -6,25 +6,68 @@
     background-color: $secundaria;
     position: relative;
     top: 60px;
-    padding-top: 30px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
 
-    @media (min-width: 768px) {
-        height: 550px;
+    @media (min-width: 992px) {
         top: 75px;
+        flex-direction: row;
+        align-items: inherit;
     }
 }
 
 .japan_swiper {
-    width: 50%;
+
+    @media (min-width: 992px) {
+        padding-left: 50px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-left: 103px;
+    }
+
+}
+
+.title_regions {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 24px;
+    margin-bottom: 0;
+
+    @media (min-width: 992px) {
+        font-size: 32px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 48px;
+        margin-top: 40px;
+    }
+}
+
+.japan_svg {
+    transform: rotate(-6deg);
+    margin-top: 50px;
+    position: relative;
+
+    @media (min-width: 992px) {
+        display: flex;
+        align-items: center;
+        transform: rotate(6deg);
+        transform: scale(120%);
+        margin-top: 0px;
+    }
 }
 
 .japan_svg path {
-    fill: $secundaria;
-    stroke: black;
+    fill: white;
+    stroke: #FFB1B1;
+    stroke-width: 0.5px;
 }
 
 .japan_svg path:hover {
-    fill: red;
+    fill: $principal !important;
     cursor: pointer;
 }
