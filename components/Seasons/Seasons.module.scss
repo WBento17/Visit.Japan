@@ -1,0 +1,53 @@
+@import '/styles/variaveis';
+
+.seasons_japan {
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.title_seasons {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    padding-top: 24px;
+    margin-bottom: 0;
+    margin-top: 0;
+
+    @media (min-width: 992px) {
+        font-size: 32px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 48px;
+        padding-top: 40px;
+    }
+}
+
+.swiper_seasons {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    overflow: visible;
+
+    @media (min-width: 992px) {
+        margin-top: 32px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-top: 56px;
+    }
+}
+
+.slide {
+    width: 300px;
+    height: 440px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5px;
+
+    &:hover {
+        filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.25));
+        transform: translateY(-10px);
+    }
+}

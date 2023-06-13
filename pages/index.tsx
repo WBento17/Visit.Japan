@@ -3,6 +3,7 @@ import styles from '@/styles/Index.module.scss'
 import Header from '/components/Header/Header';
 import Banner from '/components/Banner/Banner';
 import Map from '/components/Map/Map';
+import Seasons from '/components/Seasons/Seasons';
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Header />
       <Banner />
       <Map />
+      <Seasons />
 
     </>
   )
