@@ -1,11 +1,14 @@
 import Head from 'next/head'
-import styles from '@/styles/Index.module.scss'
+import React, {useEffect, useRef, useContext, useState} from "react";
+import styles from '/styles/Index.module.scss';
 import Header from '/components/Header/Header';
 import Banner from '/components/Banner/Banner';
 import Map from '/components/Map/Map';
 import Seasons from '/components/Seasons/Seasons';
 import Visit from '/components/Visit/Visit';
 import Popular from '/components/Popular/Popular';
+import Info from '/components/Info/Info';
+
 
 
 export default function Home() {
@@ -23,6 +26,7 @@ export default function Home() {
       <Seasons />
       <Visit />
       <Popular />
+      <Info />
 
     </>
   )
