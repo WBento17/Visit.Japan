@@ -4,6 +4,8 @@ import Header from '/components/Header/Header';
 import Banner from '/components/Banner/Banner';
 import Map from '/components/Map/Map';
 import Seasons from '/components/Seasons/Seasons';
+import Visit from '/components/Visit/Visit';
+import Popular from '/components/Popular/Popular';
 
 
 export default function Home() {
@@ -19,6 +21,8 @@ export default function Home() {
       <Banner />
       <Map />
       <Seasons />
+      <Visit />
+      <Popular />
 
     </>
   )

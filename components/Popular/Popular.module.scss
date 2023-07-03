@@ -1,0 +1,22 @@
+@import '/styles/variaveis';
+
+.popular_sect {
+    display: flex;
+}
+
+.title_regions {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 24px;
+    margin-bottom: 0;
+
+    @media (min-width: 992px) {
+        font-size: 32px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 48px;
+        margin-top: 40px;
+    }
+}
